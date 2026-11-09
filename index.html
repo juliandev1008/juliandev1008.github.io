@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explora el origen, la evolución y el impacto del desarrollo de software.">
+  <title>Bits &amp; Ideas — El viaje del software</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Bits e Ideas, inicio">
+      <span class="brand-mark">&lt;/&gt;</span><span>bits<span class="brand-amp">&amp;</span>ideas</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span></button>
+    <nav class="site-nav" aria-label="Navegación principal">
+      <a class="nav-link active" href="index.html">Inicio</a>
+      <a class="nav-link" href="historia.html">La historia</a>
+      <a class="nav-link" href="dashboard.html">Dashboard</a>
+      <a class="nav-cta" href="historia.html">Explorar <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero hero-home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> Una historia escrita en código</p>
+        <h1>De una idea<br>a <span class="text-gradient">todo un mundo.</span></h1>
+        <p class="hero-description">El software empezó con instrucciones para máquinas gigantes. Hoy conecta nuestras vidas y todavía está imaginando lo que viene.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="historia.html">Comienza el viaje <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="dashboard.html">Ver datos <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="hero-note"><span class="note-icon">✳</span> Un recorrido por más de 80 años de innovación</div>
+      </div>
+      <div class="hero-art" aria-label="Ilustración abstracta de una pantalla con código">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="floating-chip chip-one">&lt;idea /&gt;</div>
+        <div class="floating-chip chip-two">0101<span>1010</span></div>
+        <div class="code-window">
+          <div class="window-top"><div class="window-dots"><i></i><i></i><i></i></div><span>una-idea.js</span><span class="window-menu">•••</span></div>
+          <div class="code-content">
+            <div><span class="line-no">01</span><span class="code-purple">const</span> <span class="code-yellow">futuro</span> = <span class="code-pink">()</span> =&gt; {</div>
+            <div><span class="line-no">02</span>&nbsp;&nbsp;<span class="code-purple">return</span> <span class="code-green">"posible"</span>;</div>
+            <div><span class="line-no">03</span>};</div>
+            <div class="code-spacer"><span class="line-no">04</span></div>
+            <div><span class="line-no">05</span><span class="code-blue">crear</span>(<span class="code-yellow">futuro</span>);<span class="cursor"></span></div>
+          </div>
+        </div>
+        <div class="art-caption"><span class="caption-line"></span> Todo comienza con una línea</div>
+        <div class="sparkle sparkle-a">✳</div><div class="sparkle sparkle-b">✦</div><div class="sparkle sparkle-c">·</div>
+      </div>
+    </section>
+
+    <section class="intro-strip">
+      <p>Un lenguaje que aprendió a <span>transformarlo todo.</span></p>
+      <div class="strip-tags"><span>PERSONAS</span><b>✳</b><span>IDEAS</span><b>✳</b><span>TECNOLOGÍA</span></div>
+    </section>
+
+    <section class="section journey-preview">
+      <div class="section-heading">
+        <div><p class="eyebrow">01 / Un vistazo al viaje</p><h2>Pequeños pasos.<br><span class="text-gradient">Cambios gigantes.</span></h2></div>
+        <a class="text-link" href="historia.html">Ver toda la historia <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="milestone-row">
+        <article class="milestone-card milestone-pink">
+          <div class="milestone-top"><span class="milestone-icon">⌘</span><span class="mono-label">1940s</span></div>
+          <p class="card-kicker">EL COMIENZO</p><h3>Instrucciones<br>para gigantes</h3>
+          <p>Las primeras computadoras ocupaban habitaciones enteras y se programaban con cables y tarjetas perforadas.</p>
+          <a href="historia.html#inicios" aria-label="Conocer los inicios" class="card-arrow">↗</a>
+        </article>
+        <article class="milestone-card milestone-yellow">
+          <div class="milestone-top"><span class="milestone-icon">✳</span><span class="mono-label">1970s</span></div>
+          <p class="card-kicker">NUEVAS VOCES</p><h3>El código se<br>vuelve cercano</h3>
+          <p>Nacen lenguajes más intuitivos. Programar deja de ser un misterio reservado a especialistas.</p>
+          <a href="historia.html#lenguajes" aria-label="Conocer la evolución de los lenguajes" class="card-arrow">↗</a>
+        </article>
+        <article class="milestone-card milestone-blue">
+          <div class="milestone-top"><span class="milestone-icon">✺</span><span class="mono-label">HOY</span></div>
+          <p class="card-kicker">UN MUNDO CONECTADO</p><h3>Software en<br>todas partes</h3>
+          <p>Aplicaciones, inteligencia artificial y servicios en la nube acompañan casi cada momento del día.</p>
+          <a href="historia.html#hoy" aria-label="Conocer el software actual" class="card-arrow">↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="quote-band">
+      <span class="quote-mark">“</span>
+      <p>El software es una gran combinación entre arte e ingeniería.</p>
+      <span class="quote-credit">— Bill Gates</span>
+      <span class="quote-decoration">✳</span>
+    </section>
+
+    <section class="section closing-cta">
+      <div class="closing-orb">→</div>
+      <div><p class="eyebrow">Tu siguiente parada</p><h2>¿Qué viene después?</h2><p>Descubre los hitos, las personas y las ideas que cambiaron nuestra relación con la tecnología.</p></div>
+      <a class="button button-dark" href="dashboard.html">Explorar el dashboard <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="brand" href="index.html"><span class="brand-mark">&lt;/&gt;</span><span>bits<span class="brand-amp">&amp;</span>ideas</span></a><p>Una mirada al pasado para imaginar el futuro.</p><span class="footer-copy">HECHO PARA CURIOSOS · 2026</span></footer>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dashboard visual para explorar hitos y tendencias en la historia del software.">
+  <title>Dashboard — Bits &amp; Ideas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Bits e Ideas, inicio"><span class="brand-mark">&lt;/&gt;</span><span>bits<span class="brand-amp">&amp;</span>ideas</span></a>
+    <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span></button>
+    <nav class="site-nav" aria-label="Navegación principal">
+      <a class="nav-link" href="index.html">Inicio</a><a class="nav-link" href="historia.html">La historia</a><a class="nav-link active" href="dashboard.html">Dashboard</a><a class="nav-cta" href="historia.html">Ver historia <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+  <main class="dashboard-main">
+    <section class="dashboard-heading">
+      <div><p class="eyebrow"><span class="eyebrow-dot"></span> 03 / En perspectiva</p><h1>El software,<br><span class="text-gradient">en números.</span></h1><p>Un vistazo visual a los hitos y cambios que han marcado su evolución.</p></div>
+      <div class="dashboard-date"><span class="live-dot"></span> UNA HISTORIA EN MOVIMIENTO</div>
+    </section>
+    <section class="stat-grid" aria-label="Indicadores destacados">
+      <article class="stat-card stat-card-lilac"><span class="stat-label">DESDE EL PRIMER ALGORITMO</span><strong>180<span>+</span></strong><p>años de ideas programables</p><span class="stat-icon">⌘</span></article>
+      <article class="stat-card stat-card-yellow"><span class="stat-label">UN CAMBIO CLAVE</span><strong>1940<span>s</span></strong><p>las máquinas se volvieron electrónicas</p><span class="stat-icon">⚡</span></article>
+      <article class="stat-card stat-card-mint"><span class="stat-label">EL SOFTWARE HOY</span><strong>∞</strong><p>posibilidades para crear</p><span class="stat-icon">✳</span></article>
+    </section>
+    <section class="dashboard-grid">
+      <article class="panel evolution-panel">
+        <div class="panel-heading"><div><p class="panel-kicker">UN VIAJE EN EL TIEMPO</p><h2>Hitos de la evolución</h2></div><span class="panel-badge">1843 — HOY</span></div>
+        <p class="panel-description">Cada punto representa un salto en la manera de crear y usar software.</p>
+        <div class="chart-area" role="img" aria-label="Línea de tiempo con seis hitos principales de 1843 a la actualidad">
+          <div class="chart-y-labels"><span>IMPACTO</span><span>+</span><span>−</span></div>
+          <div class="chart-plot">
+            <div class="chart-gridline gridline-one"></div><div class="chart-gridline gridline-two"></div><div class="chart-gridline gridline-three"></div>
+            <svg class="chart-line" viewBox="0 0 700 200" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="lineGradient" x1="0" x2="1"><stop offset="0%" stop-color="#f06b9a"/><stop offset="52%" stop-color="#8065f5"/><stop offset="100%" stop-color="#55cbb2"/></linearGradient></defs><path d="M18 168 C85 162 89 146 150 148 S235 130 282 134 S362 95 414 102 S486 75 530 80 S617 31 682 22" fill="none" stroke="url(#lineGradient)" stroke-width="4" stroke-linecap="round"/><path d="M18 168 C85 162 89 146 150 148 S235 130 282 134 S362 95 414 102 S486 75 530 80 S617 31 682 22 L682 200 L18 200Z" fill="url(#lineGradient)" opacity=".08"/></svg>
+            <button class="chart-point point-one" type="button" aria-label="1843: Ada Lovelace y el primer algoritmo" data-tip="1843 · Ada Lovelace escribe un algoritmo"><span></span></button>
+            <button class="chart-point point-two" type="button" aria-label="1940: primeras computadoras electrónicas" data-tip="1940s · Primeras computadoras electrónicas"><span></span></button>
+            <button class="chart-point point-three" type="button" aria-label="1950: nacimiento de lenguajes de programación" data-tip="1950s · FORTRAN y COBOL"><span></span></button>
+            <button class="chart-point point-four" type="button" aria-label="1980: expansión de computadores personales" data-tip="1980s · El computador llega a más hogares"><span></span></button>
+            <button class="chart-point point-five" type="button" aria-label="1995: expansión de la web" data-tip="1990s · La web conecta el mundo"><span></span></button>
+            <button class="chart-point point-six" type="button" aria-label="Hoy: software en todas partes" data-tip="HOY · Nube, móviles e inteligencia artificial"><span></span></button>
+            <div class="chart-x-labels"><span>1843</span><span>1940</span><span>1960</span><span>1980</span><span>2000</span><span>HOY</span></div>
+          </div>
+        </div>
+        <div class="chart-legend"><span><i class="legend-dot legend-pink"></i> Algoritmos</span><span><i class="legend-dot legend-purple"></i> Computación</span><span><i class="legend-dot legend-green"></i> Conectividad</span></div>
+      </article>
+      <article class="panel eras-panel">
+        <div class="panel-heading"><div><p class="panel-kicker">LOS GRANDES CAPÍTULOS</p><h2>Un mundo en capas</h2></div></div>
+        <div class="era-list">
+          <div class="era-item"><span class="era-color era-pink"></span><div><strong>Inicios</strong><small>La idea de programar</small></div><span class="era-years">1843 — 1940</span></div>
+          <div class="era-item"><span class="era-color era-yellow"></span><div><strong>Computación</strong><small>Máquinas y lenguajes</small></div><span class="era-years">1940 — 1980</span></div>
+          <div class="era-item"><span class="era-color era-blue"></span><div><strong>Conectividad</strong><small>La web transforma todo</small></div><span class="era-years">1990 — 2010</span></div>
+          <div class="era-item"><span class="era-color era-green"></span><div><strong>Inteligencia</strong><small>Nube, móvil e IA</small></div><span class="era-years">2010 — HOY</span></div>
+        </div>
+        <a class="panel-link" href="historia.html">Recorrer la línea de tiempo <span aria-hidden="true">↗</span></a>
+      </article>
+    </section>
+    <section class="dashboard-bottom">
+      <article class="fact-card"><span class="fact-sparkle">✳</span><p class="panel-kicker">¿SABÍAS QUE...?</p><h2>El primer “programa” fue escrito antes de que existiera una computadora funcional.</h2><p>Ada Lovelace imaginó que una máquina podía hacer más que calcular: podía manipular símbolos y crear música.</p><span class="fact-source">ADA LOVELACE · 1843</span></article>
+      <article class="next-card"><div class="next-card-graphic">&lt;/&gt;</div><p class="panel-kicker">SIGUE EXPLORANDO</p><h2>Las ideas también tienen historia.</h2><a class="button button-dark" href="historia.html">Conocer los hitos <span aria-hidden="true">↗</span></a></article>
+    </section>
+  </main>
+  <footer class="site-footer"><a class="brand" href="index.html"><span class="brand-mark">&lt;/&gt;</span><span>bits<span class="brand-amp">&amp;</span>ideas</span></a><p>Una mirada al pasado para imaginar el futuro.</p><span class="footer-copy">HECHO PARA CURIOSOS · 2026</span></footer>
+</body>
+</html>

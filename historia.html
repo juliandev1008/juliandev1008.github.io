@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Un recorrido por los inicios y la evolución del desarrollo de software.">
+  <title>La historia — Bits &amp; Ideas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Bits e Ideas, inicio"><span class="brand-mark">&lt;/&gt;</span><span>bits<span class="brand-amp">&amp;</span>ideas</span></a>
+    <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span></button>
+    <nav class="site-nav" aria-label="Navegación principal">
+      <a class="nav-link" href="index.html">Inicio</a><a class="nav-link active" href="historia.html">La historia</a><a class="nav-link" href="dashboard.html">Dashboard</a><a class="nav-cta" href="dashboard.html">Ver datos <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+  <main>
+    <section class="page-hero history-hero">
+      <p class="eyebrow"><span class="eyebrow-dot"></span> 02 / La historia</p>
+      <h1>Una idea detrás<br>de <span class="text-gradient">cada era.</span></h1>
+      <p>La historia del software no es solo la historia de las máquinas: es la historia de las personas que imaginaron nuevas formas de resolver problemas.</p>
+      <a class="scroll-hint" href="#inicios"><span>↓</span> DESLIZA PARA EXPLORAR</a>
+      <div class="history-hero-sticker">desde<br><strong>1843</strong><br><span>y contando</span></div>
+    </section>
+
+    <section class="timeline-section section" id="inicios">
+      <div class="timeline-intro"><p class="eyebrow">De los primeros algoritmos a la nube</p><h2>Una línea de tiempo<br>que sigue <span class="text-gradient">creciendo.</span></h2><p>Cada generación construyó sobre la anterior. Este es un paseo por algunos momentos que abrieron nuevas posibilidades.</p></div>
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-date">1843 <span>EL PRIMER ALGORITMO</span></div><div class="timeline-dot dot-pink"></div>
+          <div class="timeline-content"><span class="timeline-emoji">🧮</span><h3>Ada Lovelace imagina el software</h3><p>Al escribir instrucciones para la máquina analítica de Charles Babbage, Ada Lovelace describe lo que hoy se considera el primer algoritmo pensado para ser ejecutado por una máquina.</p><span class="timeline-tag">UNA IDEA ADELANTADA A SU TIEMPO</span></div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-date">1940s <span>LAS PRIMERAS MÁQUINAS</span></div><div class="timeline-dot dot-yellow"></div>
+          <div class="timeline-content"><span class="timeline-emoji">⚡</span><h3>Programar, cable por cable</h3><p>Con computadoras como ENIAC, programar significaba configurar interruptores y conectar cables. Las máquinas eran enormes, pero demostraron que podían automatizar cálculos complejos.</p><span class="timeline-tag">HARDWARE Y SOFTWARE, TODAVÍA INSEPARABLES</span></div>
+        </article>
+        <article class="timeline-item" id="lenguajes">
+          <div class="timeline-date">1950–60s <span>HABLAR CON LAS MÁQUINAS</span></div><div class="timeline-dot dot-blue"></div>
+          <div class="timeline-content"><span class="timeline-emoji">⌨️</span><h3>Nacen los lenguajes de programación</h3><p>FORTRAN y COBOL acercan el código al lenguaje humano y a las necesidades de la ciencia y los negocios. Las instrucciones ya no dependen solo de cables y tarjetas.</p><span class="timeline-tag">MÁS CLARIDAD, MÁS POSIBILIDADES</span></div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-date">1970–80s <span>EL SOFTWARE SE EXPANDE</span></div><div class="timeline-dot dot-green"></div>
+          <div class="timeline-content"><span class="timeline-emoji">💾</span><h3>Computadoras para más personas</h3><p>Los computadores personales llegan a hogares y oficinas. Surgen sistemas operativos y programas que convierten a la computadora en una herramienta cotidiana.</p><span class="timeline-tag">EL COMPUTADOR SALE DEL LABORATORIO</span></div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-date">1990–2000s <span>EL MUNDO SE CONECTA</span></div><div class="timeline-dot dot-purple"></div>
+          <div class="timeline-content"><span class="timeline-emoji">🌐</span><h3>La web cambia las reglas</h3><p>Internet conecta personas y servicios a escala global. El navegador se vuelve una puerta de entrada y el desarrollo web transforma la forma de compartir información.</p><span class="timeline-tag">UNA RED, INFINITAS VENTANAS</span></div>
+        </article>
+        <article class="timeline-item" id="hoy">
+          <div class="timeline-date">HOY <span>TODO ES SOFTWARE</span></div><div class="timeline-dot dot-orange"></div>
+          <div class="timeline-content"><span class="timeline-emoji">🚀</span><h3>Nube, móviles e inteligencia artificial</h3><p>Aplicaciones móviles, servicios en la nube y herramientas de inteligencia artificial amplían lo que podemos crear. El software evoluciona con equipos distribuidos y ciclos de innovación cada vez más ágiles.</p><span class="timeline-tag">EL PRÓXIMO CAPÍTULO LO ESCRIBIMOS HOY</span></div>
+        </article>
+      </div>
+    </section>
+    <section class="history-outro">
+      <div class="outro-star">✳</div><p class="eyebrow">La historia continúa</p><h2>El futuro también<br>está <span class="text-gradient">en construcción.</span></h2><a class="button button-primary" href="dashboard.html">Explorar datos y tendencias <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+  <footer class="site-footer"><a class="brand" href="index.html"><span class="brand-mark">&lt;/&gt;</span><span>bits<span class="brand-amp">&amp;</span>ideas</span></a><p>Una mirada al pasado para imaginar el futuro.</p><span class="footer-copy">HECHO PARA CURIOSOS · 2026</span></footer>
+</body>
+</html>
